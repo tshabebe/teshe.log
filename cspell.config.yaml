@@ -1,0 +1,17 @@
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+version: '0.2'
+ignorePaths:
+  - node_modules
+  - package-lock.json
+  - .tsbuildinfo
+  - .gitignore
+  - .github
+  - .next
+  - drizzle
+  - '**/*.svg'
+  - .vscode/extensions.json
+  - public
+  - tsconfig.tsbuildinfo
+words:
+  - Teshe
+  - turbopack
