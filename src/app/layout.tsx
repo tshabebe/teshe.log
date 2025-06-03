@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
+import {} from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/providers/theme.provider'
 

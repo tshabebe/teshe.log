@@ -1,26 +1,31 @@
 @import 'tailwindcss';
+@plugin "tailwindcss-react-aria-components";
 
 :root {
-  --background: #bb8f8f;
-  --foreground: #483737;
+  --gray-1: #bb8f8f;
+  --gray-2: #c69a9a;
+  --gray-8: #483737;
+  --gray-11: #372a2a;
 }
 
 .dark {
-  --background: #5a3f3f;
-  --foreground: #d3c5c5;
+  --gray-1: #5a3f3f;
+  --gray-2: #664747;
+  --gray-8: #d3c5c5;
+  --gray-11: #d3c5c5;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--gray-1);
+  --color-foreground: var(--gray-8);
+  --color-elevation-1: var(--gray-2);
+  --color-gray-primary: var(--gray-11);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   @apply bg-background text-foreground text-sm font-medium antialiased;
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 

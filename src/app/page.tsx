@@ -1,7 +1,11 @@
+import { ThemeToggle } from '@/components/theme.toggle'
+
 export default function Home() {
   return (
     <div className="">
-      <header>hello world</header>
+      <header className="py-2 container">
+        <ThemeToggle />
+      </header>
     </div>
   )
 }
