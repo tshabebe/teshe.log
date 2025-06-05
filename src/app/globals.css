@@ -4,6 +4,7 @@
 :root {
   --gray-1: #bb8f8f;
   --gray-2: #c69a9a;
+  --gray-5: #c9a6b3;
   --gray-8: #483737;
   --gray-11: #372a2a;
 }
@@ -11,6 +12,7 @@
 .dark {
   --gray-1: #5a3f3f;
   --gray-2: #664747;
+  --gray-5: #6c4b4b;
   --gray-8: #d3c5c5;
   --gray-11: #d3c5c5;
 }
@@ -19,6 +21,7 @@
   --color-background: var(--gray-1);
   --color-foreground: var(--gray-8);
   --color-elevation-1: var(--gray-2);
+  --color-elevation-4: var(--gray-5);
   --color-gray-primary: var(--gray-11);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -31,7 +34,7 @@ body {
 
 @utility container {
   margin-inline: auto;
-  padding-inline: 6rem;
+  padding-inline: 14rem;
   @media (width >= --theme(--breakpoint-sm)) {
     max-width: none;
   }
