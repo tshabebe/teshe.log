@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/caveat": "^5.2.6",
     "geist": "^1.4.2",
     "lucide-react": "^0.511.0",
     "next": "15.3.3",
