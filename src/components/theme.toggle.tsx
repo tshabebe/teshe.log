@@ -19,12 +19,12 @@ export function ThemeToggle() {
       isSelected={isDark}
       onChange={toggleTheme}
       aria-labelledby={`${id}-off ${id}-on`}
-      className="group inline-flex gap-4 bg-elevation-1 transition duration-400 ease-in-out shadow-lg/30 px-2 py-1 rounded-full -rotate-6 selected:rotate-6"
+      className="group inline-flex gap-4 bg-[var(--portfolio-card)] transition duration-400 ease-in-out shadow-lg/30 px-2 py-1 rounded-full -rotate-6 selected:rotate-6"
     >
-      <Icon name="Sun" className="group-selected:text-gray-primary" />
+      <Icon name="Sun" className="group-selected:text-[var(--portfolio-icon)]" />
       <Icon
         name="Moon"
-        className="text-gray-primary group-selected:text-foreground"
+        className="text-[var(--portfolio-icon)] group-selected:text-[var(--portfolio-text)]"
       />
     </Switch>
   )

@@ -2,33 +2,44 @@
 @plugin "tailwindcss-react-aria-components";
 
 :root {
-  --gray-1: #bb8f8f;
-  --gray-2: #c69a9a;
-  --gray-5: #c9a6b3;
-  --gray-8: #483737;
-  --gray-11: #372a2a;
+
+    /* Light mode portfolio colors */
+    --portfolio-bg: #bb8f8f;
+    --portfolio-card: #c69a9a;
+    --portfolio-card-alt: #c89d9d;
+    --portfolio-card-dark: #b68686;
+    --portfolio-card-muted: #b07d7d;
+    --portfolio-text: #372a2a;
+    --portfolio-text-light: #483737;
+    --portfolio-text-darker: #312626;
+    --portfolio-icon: #5f4949;
+    --portfolio-divider: #7b5656;
+    --portfolio-avatar: #c9a6b3;
+    --portfolio-online: #a9e2a7;
+    --portfolio-offline: #f99280;
 }
 
 .dark {
-  --gray-1: #5a3f3f;
-  --gray-2: #664747;
-  --gray-5: #6c4b4b;
-  --gray-8: #d3c5c5;
-  --gray-11: #d3c5c5;
+    /* Dark mode portfolio colors */
+    --portfolio-bg: #5a3f3f;
+    --portfolio-card: #664747;
+    --portfolio-card-alt: #6c4c4c;
+    --portfolio-card-dark: #513939;
+    --portfolio-card-muted: #4b3434;
+    --portfolio-text: #d3c5c5;
+    --portfolio-text-light: #c6b4b4;
+    --portfolio-text-darker: #d8c7c7;
+    --portfolio-icon: #ad9494;
+    --portfolio-divider: #7b5656;
+    --portfolio-avatar: #664747;
+    --portfolio-online: #a9e2a7;
+    --portfolio-offline: #f99280;
+  
 }
 
-@theme inline {
-  --color-background: var(--gray-1);
-  --color-foreground: var(--gray-8);
-  --color-elevation-1: var(--gray-2);
-  --color-elevation-4: var(--gray-5);
-  --color-gray-primary: var(--gray-11);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 body {
-  @apply bg-background text-foreground text-sm font-medium antialiased;
+  @apply bg-[var(--portfolio-bg)] text-[var(--portfolio-text)] text-sm font-medium antialiased;
   font-family: Arial, Helvetica, sans-serif;
 }
 
